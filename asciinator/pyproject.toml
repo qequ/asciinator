@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "asciinator"
 version = "0.1.0"
-description = ""
+description = "A CLI tool to convert images and GIFs to ASCII art."
 authors = ["Alvaro Frias Garay <alvarofriasgaray@gmail.com>"]
 readme = "README.md"
 
@@ -10,6 +10,8 @@ python = "^3.10"
 pillow = "^10.1.0"
 numpy = "^1.26.2"
 
+[tool.poetry.scripts]
+asciinator = "asciinator.__main__:main"
 
 [build-system]
 requires = ["poetry-core"]
